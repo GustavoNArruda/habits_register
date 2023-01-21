@@ -1,0 +1,58 @@
+<!--     ! Enter	Faz uma estrutura automaticamente    -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--isso adiciona a fonte que eu escolhi-->
+    <!--"meta" = configuração-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--nome que aparecerá na aba-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <!--usado como cabeçalho-->
+      <img src="./assets/logo.svg" alt="Habits" />
+      <!--src busca uma imagem (a escolhida foi a "logo" em svg) e alt é igual o "alt do tt"-->
+      <button>
+        <img src="./assets/adicionar.svg" alt="mais" /> 
+        <div>Registrar meu dia</div> 
+      </button>
+    </header>
+
+    <form id="form-habits">
+      <!--geralmente inputs estão dentro de form-->
+      <!--div = caixa generica, caixa sem significado inicial-->
+      <div class="habits">
+        <div class="habit" data-name="music">🎵</div>
+        <div class="habit" data-name="coding">💻</div>
+        <div class="habit" data-name="read">📖</div>
+        <div class="habit" data-name="lifePotion">💊</div>
+        <div class="habit" data-name="exercise">💪</div>
+        <div class="habit" data-name="goodNutrition">🍆</div>
+      </div>
+      <div class="days">
+        
+        </div>
+      </div>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <!--biblioteca-->
+    <script src="./scripit.js"></script> <!--busca o script...-->
+  </body>
+</html>

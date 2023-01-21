@@ -1,0 +1,102 @@
+* {
+  /*quando alguma função se aplica para tudo*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*faz as caixas terem o tamanho definido por você. sem soma ou algo que atrapalhe a lógica*/
+}
+body {
+  background-color: #09090a; /*cor do fundo...*/
+  color: white; /*cor da fonte*/
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*deixa em "justificado" todo o conteudo na box de header neste caso*/
+  padding: 48px; /*adiciona X px na parte superior e X px na inferior; Adiciona X px na lateral esquerda e X px na direita*/
+  background-color: #09090a;
+  position: fixed;
+  width: 100%;
+
+}
+button {
+  padding: 16px 24px; /*adiciona X px na parte superior e X px na inferior; Adiciona Y px na lateral esquerda e Y px na direita*/
+  border-radius: 8px; /*arredondamento de X px*/
+  border: 1px solid #8b5cf6; /*"solid é o tipo de borda, o hexadecimal é a cor da borda*/
+  background-color: transparent;
+  color: white;
+
+  display: flex; /*permite mudar a disposição dos elementos*/
+  align-items: center; /*autoexplicativo dms. só funciona com o "display: flex;" ativado*/
+  gap: 12px; /*espaço entre os elementos*/
+
+  font-family: "Inter"; /*muda a fonte usada. Essa é a fonte que eu coloquei em no início de head do Index.html*/
+  font-weight: 600; /*peso da fonte, o quão fina ela é*/
+  font-size: 16px;
+  line-height: 125%;
+}
+form {
+  display: flex;
+
+  padding: 0 48px 48px; /*parte de cima, laterais, parte debaixo*/
+}
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+    padding: 182px 48px 48px;
+}
+.day div {
+  /*vai buscar todos os "div" de "day"*/
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+    
+}
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 182px 48px 48px;
+}
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  width: fit-content; /*"encaixe o conteúdo na largura*/
+  justify-content: center;
+}
+input {
+  appearance: none; /*tira a configuração padrão de aparência pra você poder modificar ela quando quiser*/
+  -webkit-appearance: none; /*faz funcionar em mais navegadores*/
+
+  width: 64px;
+  height: 64px;
+  /*altura e largura de x e y px*/
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background: #18181b; /*muda a cor do fundo do butao*/
+}
+input:checked {
+  /*pseudo-selector*/
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px){ /*é verdade enquanto a largura for igual a 570px*/
+  button div{
+    display: none; /*mostra "nada"*/
+  }/*chama-se "responsividade em CSS*/
+}
